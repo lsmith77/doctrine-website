@@ -202,11 +202,11 @@ mongodb_odm:
   versions:
     "1.0":
       stability: alpha
-      git_checkout_command: git clone git://github.com/jwage/odm.git mongodb_odm
-      svn_checkout_command: svn co http://svn.github.com/jwage/odm.git mongodb_odm
+      git_checkout_command: git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm
+      svn_checkout_command: svn co http://svn.github.com/doctrine/mongodb-odm.git mongodb_odm
       api_source_path: source/mongodb_odm1.0/lib
       issues_link: http://www.doctrine-project.org/jira/browse/MODM
-      browse_source_link: http://github.com/jwage/odm
+      browse_source_link: http://github.com/doctrine/mongodb-odm
       documentation_items:
         api:
           slug: api
@@ -215,7 +215,7 @@ mongodb_odm:
           description: "Detailed API documentation for the Doctrine MongoDB Object Document Mapper".
           route: "@project_api_documentation?slug=mongodb_odm&version=1.0"
           icon: api_icon.png
-          update_command: "rm -rf source/mongodb_odm1.0 && git clone git://github.com/jwage/odm.git source/mongodb_odm1.0 && rm -rf ../web/api/mongodb_odm/1.0 && cd .. && php apidocs.php api-mongodb_odm-1.0.ini"
+          update_command: "rm -rf source/mongodb_odm1.0 && git clone git://github.com/doctrine/mongodb-odm.git source/mongodb_odm1.0 && rm -rf ../web/api/mongodb_odm/1.0 && cd .. && php apidocs.php api-mongodb_odm-1.0.ini"
         reference:
           slug: reference
           title: Reference
@@ -223,7 +223,7 @@ mongodb_odm:
           description: Detailed reference documentation for all the Doctrine MongoDB Object Document Mapper features.
           toc_path: documentation/odm1.0/MongoDB/reference
           markup_parser: markdown
-          update_command: "rm -rf documentation/odm1.0 && git clone git://github.com/jwage/odm-documentation.git documentation/odm1.0"
+          update_command: "rm -rf documentation/odm1.0 && git clone git://github.com/doctrine/mongodb-odm-documentation.git documentation/odm1.0"
           icon: reference_icon.png
         cookbook:
           slug: cookbook
@@ -232,5 +232,5 @@ mongodb_odm:
           description: The cookbook is a collection of simple and advanced recipes for using Doctrine MongoDB ODM. They are both written by core Doctrine developers as well as by Doctrine users in the community.
           toc_path: documentation/odm1.0/MongoDB/cookbook
           markup_parser: markdown
-          update_command: "rm -rf documentation/odm1.0 && git clone git://github.com/jwage/odm-documentation.git documentation/odm1.0"
+          update_command: "rm -rf documentation/odm1.0 && git clone git://github.com/doctrine/mongodb-odm-documentation.git documentation/odm1.0"
           icon: cookbook_icon.png
