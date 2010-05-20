@@ -2,7 +2,7 @@ orm:
   slug: orm
   title: Object Relational Mapper
   short_title: ORM
-  description: "Object relational mapper (ORM) for PHP 5.2.3+ and 5.3.0+ that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication."
+  description: "Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication."
   latest_version: "1.2"
   is_primary: true
   versions:
