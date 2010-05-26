@@ -1,6 +1,6 @@
 <?php
 
-class DoctrineUpdateDocumentationTask extends sfBaseTask
+class DoctrineReleaseTask extends sfBaseTask
 {
   protected function configure()
   {
