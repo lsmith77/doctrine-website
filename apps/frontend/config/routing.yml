@@ -2,6 +2,10 @@ homepage:
   url:   /
   param: { module: main, action: index, current_menu_item: home }
 
+contribute:
+  url:   /contribute
+  param: { module: contribute, action: index }
+
 projects:
   url:   /projects
   param: { module: projects, action: index, current_menu_item: projects }
