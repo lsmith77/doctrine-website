@@ -3,6 +3,7 @@
 class Project
 {
   public $slug;
+  public $data = array();
 
   public static $projects;
 

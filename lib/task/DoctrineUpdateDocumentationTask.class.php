@@ -5,7 +5,8 @@ class DoctrineUpdateDocumentationTask extends sfBaseTask
   protected function configure()
   {
     $this->addOptions(array(
-      new sfCommandOption('project', null, sfCommandOption::PARAMETER_REQUIRED, 'The project slug'),
+      new sfCommandOption('project', null, sfCommandOption::PARAMETER_REQUIRED, 'The project slug.'),
+      new sfCommandOption('vers', null, sfCommandOption::PARAMETER_REQUIRED, 'The project version.'),
     ));
 
     $this->namespace        = 'doctrine';
@@ -29,6 +30,9 @@ EOF;
 
       foreach ($project->getVersions() as $version)
       {
+        if (isset($options['vers']) && $options['vers'] != $version->getSlug()) {
+          continue;
+        }
         foreach ($version->getDocumentationItems() as $documentationItem)
         {
           $command = $documentationItem->getUpdateCommand();
