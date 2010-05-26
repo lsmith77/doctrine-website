@@ -29,6 +29,45 @@ class contributeActions extends sfActions
 
 class ContributorDocRenderer extends Sensei_Doc_Renderer_Xhtml
 {
+  protected function _renderToc($section)
+  {
+      $output = '';
+
+      if ($section instanceof Sensei_Doc_Toc) {
+          $class = ' class="tree"';
+      } elseif ($section !== $this->_options['section']) {
+          $class = ' class="closed"';
+      } else {
+          $class = '';
+      }
+
+      if (!$section instanceof Sensei_Doc_Toc) {
+          $output .= '<ul' . $class . '>' . "\n";       
+      }
+
+      for ($i = 0; $i < $section->count(); $i++) {
+          $child = $section->getChild($i);
+
+          $text = $child->getName();
+          $href = $this->makeUrl($child);
+
+          $output .= '<li><a href="' . $href . '">' . $text . '</a>';
+
+          if ($child->count() > 0) {
+              $output .= "\n";
+              $output .= $this->_renderToc($child);
+          }
+
+          $output .= '</li>' . "\n";
+      }
+
+      if (!$section instanceof Sensei_Doc_Toc) {
+        $output .= '</ul>' . "\n";
+      }
+  
+      return $output;
+  }
+
   protected function _renderSection(Sensei_Doc_Section $section)
   {
     $output = '';
