@@ -4,7 +4,7 @@ homepage:
 
 contribute:
   url:   /contribute
-  param: { module: contribute, action: index }
+  param: { module: contribute, action: index, current_menu_item: contribute }
 
 projects:
   url:   /projects
