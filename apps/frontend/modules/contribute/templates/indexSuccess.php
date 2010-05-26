@@ -1,4 +1,6 @@
-<?php echo $renderer->render() ?>
+<div id="documentation">
+  <?php echo $renderer->render() ?>
+</div>
 
 <?php slot('right'); ?>
   <h2>Table of Contents</h2>
