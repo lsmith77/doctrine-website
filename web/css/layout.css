@@ -274,7 +274,7 @@ a:hover  { color: #00508c; text-decoration:underline; border:0; }
 
 div.comment_row .body { margin:12px 10px 10px; }
 div.comment_row h3 { margin:10px 10px 15px; }
-div.comment_row { overflow/**/: auto; margin-right: 30px; padding: 8px; margin: 0 30px 15px 30px; background: #f8ffbc; }
+div.comment_row {  margin-right: 30px; padding: 8px; margin: 0 30px 15px 30px; background: #f8ffbc; }
 div.comment_row ul { margin-left: 20px; }
 div.comment_row ul li { list-style-type: square; text-indent: 0; }
 
