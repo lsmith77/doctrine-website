@@ -144,12 +144,6 @@ dbal:
           markup_parser: markdown
           update_command: 'rm -rf documentation/dbal2.0 && git clone git://github.com/doctrine/dbal-documentation.git documentation/dbal2.0'
           icon: reference_icon.png
-      releases:
-        2.0.0BETA2:
-          package_name: DoctrineDBAL-2.0.0BETA2.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal'
-          svn_checkout_command: 'svn co http://svn.github.com/doctrine/dbal.git doctrine2-dbal'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA2.tgz'
 mongodb_odm:
   slug: mongodb_odm
   title: 'MongoDB Object Document Mapper'
