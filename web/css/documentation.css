@@ -163,6 +163,10 @@ ul.tree {
   overflow/**/: auto;
 }
 
+#documentation .section h3 {
+  font-size: 110%;
+}
+
 /* Documentation View Index */
 
 #documentation #viewing_options {
