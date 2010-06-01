@@ -35,6 +35,11 @@ class mainActions extends sfActions
       ->execute();
   }
 
+  public function executeCommunity()
+  {
+    $this->getResponse()->setTitle('Doctrine - Community');
+  }
+
   public function executeError404()
   {
   }

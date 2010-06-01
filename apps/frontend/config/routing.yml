@@ -6,6 +6,10 @@ contribute:
   url:   /contribute
   param: { module: contribute, action: index, current_menu_item: contribute }
 
+community:
+  url:   /community
+  param: { module: main, action: community, current_menu_item: community }
+
 projects:
   url:   /projects
   param: { module: projects, action: index, current_menu_item: projects }
