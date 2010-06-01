@@ -1,4 +1,13 @@
-<h2>Get Involved</h2>
+<h2>Want to contribute?</h2>
+
+<p>
+  Open source software development is a battle against problems. There's no better way to be part
+  of the team than to grab a gun and dive into the trenches. You can learn how to
+  get started contributing by reading the <?php echo link_to('contribute', '@contribute') ?>
+  page.
+</p>
+
+<h2>Get Involved with the Community</h2>
 
 <p>
   Want to get involved with the Doctrine community? This page aims to document
@@ -6,7 +15,7 @@
   support or for getting support yourself.
 </p>
 
-<h3>Mailing Lists</h3>
+<h2>Mailing Lists</h2>
 
 <p>
   The primary means for communication between Doctrine users and developers are the
@@ -18,7 +27,7 @@
   <li><a href="http://groups.google.com/group/doctrine-dev" target="_BLANK">Doctrine Developers Mailing List</a></li>
 </ul>
 
-<h3>IRC</h3>
+<h2>IRC</h2>
 
 <p>
  If you prefer a more intimate and instant way of communicating with other Doctrine
