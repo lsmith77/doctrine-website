@@ -1,0 +1,16 @@
+#documentation ul li {
+	background-color: #f5f5f5;
+	list-style-type: none;
+	padding: 20px;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+#documentation ul li strong {
+	font-size: 16px;
+}
+
+#documentation ul li p {
+	margin: 0;
+	padding: 0;
+}

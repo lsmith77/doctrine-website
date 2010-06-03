@@ -18,6 +18,10 @@ project:
   url:   /projects/:slug
   param: { module: projects, action: view }
 
+documentation:
+  url:   /documentation
+  param: { module: documentation, action: global_index }
+
 # 2.0 old documentation routes
 old_documentation1:
   url:   /documentation/manual/2_0/:sf_culture
