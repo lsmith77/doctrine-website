@@ -1,3 +1,5 @@
+<?php use_stylesheet('documentation_global_index') ?>
+
 <div id="documentation">
   <?php foreach ($projects as $project) :?>
     <?php if ($documentationItems = $project->getLatestVersion()->getDocumentationItems()): ?>
