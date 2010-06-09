@@ -160,6 +160,11 @@ mongodb_odm:
       api_source_path: source/mongodb_odm1.0/lib
       issues_link: 'http://www.doctrine-project.org/jira/browse/MODM'
       browse_source_link: 'http://github.com/doctrine/mongodb-odm'
+      releases:
+        1.0.0ALPHA1:
+          package_name: DoctrineMongoDBODM-1.0.0ALPHA1.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 2.0.0ALPHA1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0ALPHA1'
       documentation_items:
         api:
           slug: api
