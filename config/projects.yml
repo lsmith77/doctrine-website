@@ -163,7 +163,7 @@ mongodb_odm:
       releases:
         1.0.0ALPHA1:
           package_name: DoctrineMongoDBODM-1.0.0ALPHA1.tgz
-          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 2.0.0ALPHA1'
+          git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm<br/>$ cd mongodb_odm<br/>$ git checkout 1.0.0ALPHA1'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineMongoDBODM-1.0.0ALPHA1'
       documentation_items:
         api:
