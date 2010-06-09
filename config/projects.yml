@@ -187,3 +187,37 @@ mongodb_odm:
           markup_parser: markdown
           update_command: 'rm -rf documentation/odm1.0 && git clone git://github.com/doctrine/mongodb-odm-documentation.git documentation/odm1.0'
           icon: cookbook_icon.png
+migrations:
+  slug: migrations
+  title: 'Doctrine Migrations'
+  short_title: Migrations
+  description: 'The Doctrine Migrations offer additional functionality on top of the database abstraction layer (DBAL) for versioning your database schema and easily deploying changes to it. It is a very easy to use and powerful tool.'
+  latest_version: '2.0'
+  is_primary: false
+  namespace: Doctrine\DBAL\Migrations
+  versions:
+    '2.0':
+      stability: alpha
+      git_checkout_command: 'git clone git://github.com/doctrine/migrations.git migrations'
+      svn_checkout_command: 'svn co http://svn.github.com/doctrine/migrations.git migrations'
+      api_source_path: source/migrations2.0/lib
+      issues_link: 'http://www.doctrine-project.org/jira/browse/DMIG'
+      browse_source_link: 'http://github.com/doctrine/migrations'
+      documentation_items:
+        api:
+          slug: api
+          title: API
+          subtitle: 'Doctrine Migrations'
+          description: 'Detailed API documentation for the Doctrine Migrations'
+          route: '@project_api_documentation?slug=migrations&version=2.0'
+          icon: api_icon.png
+          update_command: 'rm -rf source/migrations2.0 && git clone git://github.com/doctrine/migrations.git source/migrations2.0 && rm -rf ../web/api/migrations/2.0 && cd .. && php apidocs.php api-migrations-2.0.ini'
+        reference:
+          slug: reference
+          title: Reference
+          subtitle: 'Reference for using the Doctrine Migrations'
+          description: 'Detailed reference documentation for all the Doctrine Migrations features.'
+          toc_path: documentation/migrations2.0/reference
+          markup_parser: markdown
+          update_command: 'rm -rf documentation/migrations2.0 && git clone git://github.com/doctrine/migrations-documentation.git documentation/migrations2.0'
+          icon: reference_icon.png
