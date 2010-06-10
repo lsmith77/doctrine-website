@@ -15,7 +15,7 @@
   $links['http://www.doctrine-project.org/jira'] = 'development';
   $links['@contribute'] = 'contribute';
   $links['@community'] = 'community';
-  //$links['http://wiki.doctrine-project.org'] = 'wiki';
+  $links['http://wiki.doctrine-project.org'] = 'wiki';
 
   $current = $sf_request->getParameter('current_menu_item');
 
