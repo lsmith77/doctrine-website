@@ -35,22 +35,26 @@
   margin-left: 100px;
 }
 
-#projects #dbal {
+#dbal {
   background: #f5f5f5 url('../images/dbal_icon.png') 10px 10px no-repeat;
 }
 
-#projects #migrations {
+#migrations {
   background: #f5f5f5 url('../images/migrations_icon.png') 10px 10px no-repeat;
 }
 
-#projects #orm {
+#orm {
   background: #f5f5f5 url('../images/orm_icon.png') 10px 10px no-repeat;
 }
 
-#projects #rest {
+#rest {
   background: #f5f5f5 url('../images/rest_icon.png') 10px 10px no-repeat;
 }
 
 #mongodb_odm {
   background: #f5f5f5 url('../images/mongodb_odm_icon.png') 30px 20px no-repeat;
+}
+
+#common {
+  background: #f5f5f5 url('../images/common_icon.png') 15px 10px no-repeat;
 }
