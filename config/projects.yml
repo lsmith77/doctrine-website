@@ -242,7 +242,7 @@ common:
   short_title: Common
   description: 'The Doctrine Common package contains shared code between the other packages.'
   latest_version: '2.0'
-  is_primary: true
+  is_primary: false
   versions:
     '2.0':
       version_file: source/common2.0/lib/Doctrine/Common/Version.php
