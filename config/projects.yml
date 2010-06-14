@@ -108,6 +108,11 @@ orm:
         2.0.0BETA1:
           package_name: DoctrineORM-2.0.0-BETA1.tgz
           svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/2.0.0-BETA1'
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA1'
+        2.0.0BETA2:
+          package_name: DoctrineORM-2.0.0BETA2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA2'
 dbal:
   slug: dbal
   title: 'Database Abstraction Layer'
@@ -144,6 +149,11 @@ dbal:
           markup_parser: markdown
           update_command: 'rm -rf documentation/dbal2.0 && git clone git://github.com/doctrine/dbal-documentation.git documentation/dbal2.0'
           icon: reference_icon.png
+      releases:
+        2.0.0BETA2:
+          package_name: DoctrineDBAL-2.0.0BETA2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-BETA2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA2'
 mongodb_odm:
   slug: mongodb_odm
   title: 'MongoDB Object Document Mapper'
@@ -226,3 +236,35 @@ migrations:
           markup_parser: markdown
           update_command: 'rm -rf documentation/migrations2.0 && git clone git://github.com/doctrine/migrations-documentation.git documentation/migrations2.0'
           icon: reference_icon.png
+common:
+  slug: common
+  title: 'Common'
+  short_title: Common
+  description: 'The Doctrine Common package contains shared code between the other packages.'
+  latest_version: '2.0'
+  is_primary: true
+  versions:
+    '2.0':
+      version_file: source/common2.0/lib/Doctrine/Common/Version.php
+      api_source_path: source/common2.0/lib/Doctrine/Common
+      source_path: source/common2.0
+      update_source_command: 'rm -rf source/common2.0 && git clone git://github.com/doctrine/common.git source/common2.0 && cd source/common2.0 && git submodule init && git submodule update'
+      stability: beta
+      git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common'
+      svn_checkout_command: 'svn co http://svn.github.com/doctrine/common.git doctrine2-common'
+      issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
+      browse_source_link: 'http://github.com/doctrine/common'
+      documentation_items:
+        api:
+          slug: api
+          title: API
+          subtitle: 'Doctrine 2.0 Common API Documentation'
+          description: 'Detailed API documentation for the Doctrine 2.0 Common Package.'
+          route: '@project_api_documentation?slug=common&version=2.0'
+          icon: api_icon.png
+          update_command: 'rm -rf source/common2.0 && git clone git://github.com/doctrine/common.git source/common2.0 && rm -rf ../web/api/common/2.0 && cd .. && php apidocs.php api-common-2.0.ini'
+      releases:
+        2.0.0BETA2:
+          package_name: DoctrineCommon-2.0.0BETA2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA2'

@@ -52,23 +52,3 @@
   padding: 0;
   margin-bottom: 10px;
 }
-
-#dbal {
-  background: url('../images/dbal_icon.png') 10px 10px no-repeat;
-}
-
-#migrations {
-  background:  url('../images/migrations_icon.png') 10px 10px no-repeat;
-}
-
-#orm {
-  background: url('../images/orm_icon.png') 10px 10px no-repeat;
-}
-
-#rest {
-  background: url('../images/rest_icon.png') 10px 10px no-repeat;
-}
-
-#mongodb_odm {
-  background: url('../images/mongodb_odm_icon.png') 30px 20px no-repeat;
-}
