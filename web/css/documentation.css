@@ -456,8 +456,12 @@ blockquote.tip {
 
 blockquote.sidebar {
   margin: 10px 0;
-  padding: 20px;
+  padding: 10px;
   background: #ccc;
+}
+
+blockquote.sidebar ul {
+  margin: 10px;
 }
 
 blockquote.sidebar p.title {
