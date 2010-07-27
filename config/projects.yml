@@ -154,6 +154,10 @@ dbal:
           package_name: DoctrineDBAL-2.0.0BETA2.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-BETA2'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA2'
+        2.0.0BETA3:
+          package_name: DoctrineDBAL-2.0.0BETA3.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-BETA3'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA3'
 mongodb_odm:
   slug: mongodb_odm
   title: 'MongoDB Object Document Mapper'
@@ -268,3 +272,4 @@ common:
           package_name: DoctrineCommon-2.0.0BETA2.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA2'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA2'
+
