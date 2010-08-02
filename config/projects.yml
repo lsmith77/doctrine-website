@@ -271,6 +271,15 @@ common:
           route: '@project_api_documentation?slug=common&version=2.0'
           icon: api_icon.png
           update_command: 'rm -rf source/common2.0 && git clone git://github.com/doctrine/common.git source/common2.0 && rm -rf ../web/api/common/2.0 && cd .. && php apidocs.php api-common-2.0.ini'
+        reference:
+          slug: reference
+          title: Reference
+          subtitle: 'Reference for the common Doctrine PHP extensions.'
+          description: 'Detailed reference documentation for all the common Doctrine PHP extensions.'
+          toc_path: documentation/common2.0/reference
+          markup_parser: markdown
+          update_command: 'rm -rf documentation/common2.0 && git clone git://github.com/doctrine/common-documentation.git documentation/common2.0'
+          icon: reference_icon.png
       releases:
         2.0.0BETA2:
           package_name: DoctrineCommon-2.0.0BETA2.tgz
