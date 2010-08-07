@@ -113,6 +113,10 @@ orm:
           package_name: DoctrineORM-2.0.0BETA2.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA2<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA2'
+        2.0.0BETA3:
+          package_name: DoctrineORM-2.0.0BETA3.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA3'
 dbal:
   slug: dbal
   title: 'Database Abstraction Layer'
@@ -285,4 +289,12 @@ common:
           package_name: DoctrineCommon-2.0.0BETA2.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA2'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA2'
+        2.0.0BETA3:
+          package_name: DoctrineCommon-2.0.0BETA3.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA3'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA3'
+        2.0.0BETA4:
+          package_name: DoctrineCommon-2.0.0BETA4.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA4'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA4'
 
