@@ -55,6 +55,10 @@ orm:
           package_name: Doctrine-1.2.2.tgz
           svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/1.2.2'
           pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.2.tgz'
+        1.2.3:
+          package_name: Doctrine-1.2.3.tgz
+          svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/1.2.3'
+          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.3.tgz'
     '2.0':
       version_file: source/orm2.0/lib/Doctrine/ORM/Version.php
       api_source_path: source/orm2.0/lib/Doctrine/ORM
