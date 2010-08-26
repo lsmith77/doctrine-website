@@ -1,0 +1,6 @@
+cache/*
+log/*
+web/api/*
+pear/*
+data/documentation/*
+data/source/*

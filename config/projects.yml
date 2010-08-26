@@ -13,6 +13,7 @@ orm:
       stability: stable
       issues_link: 'http://www.doctrine-project.org/jira/browse/DC'
       browse_source_link: 'http://github.com/doctrine/doctrine1'
+      upgrade_file_path: source/orm1.2/UPGRADE_TO_1_2
       documentation_items:
         api:
           slug: api
@@ -69,6 +70,7 @@ orm:
       stability: beta
       issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
       browse_source_link: 'http://github.com/doctrine/doctrine2/tree/master/lib/Doctrine/ORM'
+      upgrade_file_path: source/orm2.0/UPGRADE_TO_2_0
       documentation_items:
         api:
           slug: api

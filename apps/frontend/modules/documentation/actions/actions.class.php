@@ -87,4 +87,16 @@ class documentationActions extends sfActions
 
     $this->getResponse()->setTitle('Doctrine - '.$this->documentationItem->getTitle().' - '.$this->renderer->getChapter()->getName());
   }
+
+  public function executeWhats_new()
+  {
+      $this->project = Project::getProject($this->getRequestParameter('slug'));
+      $this->forward404Unless($this->project);
+
+      $this->version = $this->project->getVersion($this->getRequestParameter('version'));
+      $this->forward404Unless($this->version);
+
+      $this->markdown = $this->version->getWhatsNewMarkdown();
+      $this->forward404Unless($this->markdown);
+  }
 }

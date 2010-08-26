@@ -30,7 +30,10 @@
               <?php else: ?>
                 <li><?php echo link_to('Download ' . $v->getSlug(), '@download?slug='.$project->getSlug().'#'.$v->getSlug()) ?></li>
               <?php endif; ?>
-          
+              <?php if ($v->hasWhatsNewFile()): ?>
+                <li><?php echo link_to("What's New", '@project_documentation_whats_new?slug='.$project->getSlug().'&version='.$v->getSlug()) ?></li>
+              <?php endif; ?>
+
               <li><?php echo link_to('Documentation', '@project_documentation?slug='.$project->getSlug().'&version='.$v->getSlug()) ?></li>
               <li><?php echo link_to('Report a Bug', $v->getIssuesLink()) ?></li>
               <li><?php echo link_to('Browse Source', $v->getBrowseSourceLink()) ?></li>

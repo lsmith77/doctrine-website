@@ -16,7 +16,6 @@
   <li class="last"><?php echo $renderer->getOption('section')->getName() ?></li>
 </ul>
 
-
 <div id="documentation">
   <?php echo get_partial('documentation/next_prev', array('renderer' => $renderer)) ?>
 

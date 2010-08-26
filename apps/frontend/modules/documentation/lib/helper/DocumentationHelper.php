@@ -1,4 +1,5 @@
 <?php
+
 function get_next_and_prev_nav($renderer)
 {
   return get_partial('documentation/next_and_prev_nav', array('renderer' => $renderer));

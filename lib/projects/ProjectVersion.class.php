@@ -166,6 +166,20 @@ test.phpmd_exec=', $name, $stability);
     }
   }
 
+  public function hasWhatsNewFile()
+  {
+    return isset($this->data['upgrade_file_path']) ? true : false;
+  }
+
+  public function getWhatsNewMarkdown()
+  {
+    if ($this->hasWhatsNewFile()) {
+      $path = sfConfig::get('sf_data_dir').'/'.$this->data['upgrade_file_path'];
+      return file_get_contents($path);
+    } else {
+      return null;
+    }
+  }
 
   public function getBrowseSourceLink()
   {

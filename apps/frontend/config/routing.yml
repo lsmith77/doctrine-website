@@ -103,6 +103,11 @@ project_documentation:
   param: { module: documentation, action: index }
   options: { segment_separators: [/] }
 
+project_documentation_whats_new:
+  url:   /projects/:slug/:version/docs/whats-new/:sf_culture
+  param: { module: documentation, action: whats_new }
+  options: { segment_separators: [/] }
+
 project_documentation_item:
   url:   /projects/:slug/:version/docs/:item/:sf_culture
   param: { module: documentation, action: item_index }
