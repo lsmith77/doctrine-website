@@ -8,9 +8,7 @@
   <li class="last"><?php echo $sf_request->getParameter('release') ?></li>
 </ul>
 
-<h2>Package Download</h2>
-
-<p>You can directly download the package file <?php echo link_to('here', $release->getPackageLink()) ?> to get the source code.</p>
+<?php echo button_to('Download ' . $release->getSlug() . ' Package', $release->getPackageLink(), 'class=download-button') ?>
 
 <?php if ($command = $release->getSvnCheckoutCommand()): ?>
   <h2>Checkout from Subversion</h2>
