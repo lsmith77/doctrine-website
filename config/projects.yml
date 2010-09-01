@@ -307,4 +307,8 @@ common:
           package_name: DoctrineCommon-2.0.0BETA4.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-BETA4'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0BETA4'
+        2.0.0RC1:
+          package_name: DoctrineCommon-2.0.0RC1.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-RC1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0RC1'
 
