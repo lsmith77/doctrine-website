@@ -464,3 +464,22 @@ ul.error_list li {
   background: #333;
   color: #fff;
 }
+
+input.download-button {
+  padding: 10px;
+  border: 1px solid #eee;
+  background: #ffc;
+  margin-left: 30px;
+  -moz-border-radius : 5px;
+  -webkit-border-radius: 5px;
+  border-radius : 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+}
+
+input.download-button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

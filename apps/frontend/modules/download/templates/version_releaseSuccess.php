@@ -8,11 +8,7 @@
   <li class="last"><?php echo $sf_request->getParameter('release') ?></li>
 </ul>
 
-<h2>Pear Package Download</h2>
-
-<p>You can directly download the PEAR package file <?php echo link_to('here', $release->getPackageLink()) ?>. You can manually extract the code or you can install the PEAR package file locally.</p>
-
-<pre class="command-line"><code>$ pear install /path/to/<?php echo $release->getPackageName() ?></code></pre>
+<?php echo button_to('Download ' . $release->getSlug() . ' Package', $release->getPackageLink(), 'class=download-button') ?>
 
 <?php if ($command = $release->getSvnCheckoutCommand()): ?>
   <h2>Checkout from Subversion</h2>
