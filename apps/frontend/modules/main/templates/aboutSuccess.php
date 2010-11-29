@@ -48,4 +48,25 @@ focused on providing persistence services and related functionality.</p>
       </li>
     <?php endforeach; ?>
   </ul>
+
+  <h2>Companies</h2>
+  <p>While it is the individuals who work on the project code, some contributions are done on
+  company time so we like to give recognition to those companies. Below is a list of companies
+  who have contributed significant resources to the project in the past or now:</p>
+
+  <p>
+    <img src="<?php echo image_path('/uploads/assets/opensky_logo.png') ?>" />
+    <h3><a href="http://engineering.shopopensky.com" target="_BLANK">The OpenSky Project</a></h3>
+    <p>The OpenSky Project contributes developers resources to work on the Doctrine MongoDB
+    Object Document Mapper. Bulat Shakirzyanov (avalanche123) and Jonathan H. Wage (jwage)
+    are both full-time employees at OpenSky.</p>
+  </p>
+
+  <p>
+    <img src="<?php echo image_path('/uploads/assets/sensio_logo.gif') ?>" />
+    <h3><a href="http://www.sensiolabs.org" target="_BLANK">Sensio Labs</a></h3>
+    <p>Sensio Labs, the creators of the Symfony framework, sponsored the Doctrine project
+    in many ways over the years including employing Jonathan H. Wage full-time to work on
+    and speak about open source.</p>
+  </p>
 </div>
