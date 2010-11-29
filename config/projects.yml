@@ -176,6 +176,10 @@ dbal:
           package_name: DoctrineDBAL-2.0.0BETA4-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-BETA4<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0BETA4'
+        2.0.0RC3:
+          package_name: DoctrineDBAL-2.0.0RC3-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-RC3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0RC3'
 mongodb_odm:
   slug: mongodb_odm
   title: 'MongoDB Object Document Mapper'
@@ -234,7 +238,7 @@ mongodb_odm:
           icon: cookbook_icon.png
 migrations:
   slug: migrations
-  title: 'Doctrine Migrations'
+  title: 'Migrations'
   short_title: Migrations
   description: 'The Doctrine Migrations offer additional functionality on top of the database abstraction layer (DBAL) for versioning your database schema and easily deploying changes to it. It is a very easy to use and powerful tool.'
   latest_version: '2.0'
@@ -270,7 +274,7 @@ common:
   slug: common
   title: 'Common'
   short_title: Common
-  description: 'The Doctrine Common package contains shared code between the other packages.'
+  description: 'The Doctrine Common project is a library that provides extensions to core PHP functionality.'
   latest_version: '2.0'
   is_primary: false
   versions:
@@ -319,4 +323,7 @@ common:
           package_name: DoctrineCommon-2.0.0RC1.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-RC1'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0RC1'
-
+        2.0.0RC2:
+          package_name: DoctrineCommon-2.0.0RC2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-RC2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0RC2'
