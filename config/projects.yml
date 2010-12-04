@@ -127,6 +127,10 @@ orm:
           package_name: DoctrineORM-2.0.0BETA4-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0-BETA4<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0BETA4'
+        2.0.0RC1:
+          package_name: DoctrineORM-2.0.0RC1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.0RC1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.0RC1'
 dbal:
   slug: dbal
   title: 'Database Abstraction Layer'
@@ -180,6 +184,10 @@ dbal:
           package_name: DoctrineDBAL-2.0.0RC3-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-RC3<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0RC3'
+        2.0.0RC4:
+          package_name: DoctrineDBAL-2.0.0RC4-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.0-RC4<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.0RC4'
 mongodb_odm:
   slug: mongodb_odm
   title: 'MongoDB Object Document Mapper'
