@@ -66,6 +66,16 @@ class DocumentationItem
     return $this->data['update_command'];
   }
 
+  public function isReStructuredTextDocumentation()
+  {
+    return isset($this->data['markup_parser']) && ($this->data['markup_parser'] == "rest");
+  }
+
+  public function getReStDocRedirectUrl($chapter = false)
+  {
+    return $this->data['rest_doc_location'];
+  }
+
   public function update()
   {
     if ($command = $this->getUpdateCommand())

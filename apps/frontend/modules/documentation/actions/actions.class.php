@@ -61,6 +61,10 @@ class documentationActions extends sfActions
     $this->forward404Unless($this->version);
 
     $this->documentationItem = $this->version->getDocumentationItem($this->getRequestParameter('item'));
+    if ($this->documentationItem->isReStructuredTextDocumentation()) {
+      return $this->redirect($this->documentationItem->getReStDocRedirectUrl(), 302);
+    }
+
     $this->renderer = $this->documentationItem->getRenderer(
       $this->getRequestParameter('sf_culture'),
       $this->getUser(),
@@ -79,6 +83,12 @@ class documentationActions extends sfActions
     $this->forward404Unless($this->version);
 
     $this->documentationItem = $this->version->getDocumentationItem($this->getRequestParameter('item'));
+    if ($this->documentationItem->isReStructuredTextDocumentation()) {
+      return $this->redirect($this->documentationItem->getReStDocRedirectUrl(
+        $this->getRequestParameter('chapter')), 302
+      );
+    }
+
     $this->renderer = $this->documentationItem->getRenderer(
       $this->getRequestParameter('sf_culture'),
       $this->getUser(),
