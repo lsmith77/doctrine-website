@@ -88,7 +88,7 @@ orm:
           toc_path: documentation/orm2.0/manual
           rest_doc_location: http://www.doctrine-project.org/docs/orm/2.0/en
           markup_parser: rest
-          update_command: 'rm -rf documentation/orm2.0 && git clone git://github.com/doctrine/orm-documentation.git documentation/orm2.0'
+          update_command: 'rm -rf documentation/orm2.0 && git clone git://github.com/doctrine/orm-documentation.git documentation/orm2.0 && sphinx-build documentation/orm2.0/en documentation/orm2.0/build/en'
           icon: reference_icon.png
         cookbook:
           slug: cookbook
