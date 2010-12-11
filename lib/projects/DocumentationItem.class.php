@@ -73,7 +73,11 @@ class DocumentationItem
 
   public function getReStDocRedirectUrl($chapter = false)
   {
-    return $this->data['rest_doc_location'];
+    $loc = $this->data['rest_doc_location'];
+    if ($chapter) {
+      $loc .= "/reference/".$chapter.".html";
+    }
+    return $loc;
   }
 
   public function update()
