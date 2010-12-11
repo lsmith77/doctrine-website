@@ -75,7 +75,7 @@ class DocumentationItem
   {
     $loc = $this->data['rest_doc_location'];
     if ($chapter) {
-      $loc .= "/reference/".$chapter.".html";
+      $loc .= "/".$this->data['slug']."/".$chapter.".html";
     }
     return $loc;
   }
