@@ -170,8 +170,9 @@ dbal:
           subtitle: 'Reference for using the Doctrine Database Abstraction Layer'
           description: 'Learn how to use the Doctrine Database Abstraction Layer and take advantage of all simple and advanced features.'
           toc_path: documentation/dbal2.0/reference
-          markup_parser: markdown
-          update_command: 'rm -rf documentation/dbal2.0 && git clone git://github.com/doctrine/dbal-documentation.git documentation/dbal2.0'
+          rest_doc_location: http://www.doctrine-project.org/docs/dbal/2.0/en
+          markup_parser: rest
+          update_command: 'rm -rf documentation/dbal2.0 && git clone git://github.com/doctrine/dbal-documentation.git documentation/dbal2.0 && sphinx-build documentation/dbal2.0/en/ documentation/build/dbal/2.0/en'
           icon: reference_icon.png
       releases:
         2.0.0BETA2:
