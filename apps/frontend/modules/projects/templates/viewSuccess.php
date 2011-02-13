@@ -12,7 +12,16 @@
       <h3><?php echo $project->getTitle() ?></h3>
       <p><?php echo $project->getDescription() ?></p>
 
-      <p>The latest stable version for <strong><?php echo $project->getShortTitle() ?></strong> is <strong><?php echo $project->getLatestVersion() ?></strong> and is in <strong><?php echo $project->getLatestVersion()->getStability() ?></strong> condition.</p>
+      <p>
+        The latest version for <strong><?php echo $project->getShortTitle() ?></strong> is <strong><?php echo $project->getLatestVersion() ?></strong>.
+
+        <?php if ($latestRelease = $project->getLatestVersion()->getLatestRelease()): ?>
+          Its latest release is <?php echo $latestRelease ?> (<?php echo $project->getLatestVersion()->getStability() ?>).
+        <?php else: ?>
+          It has not been released yet and is in <strong><?php echo $project->getLatestVersion()->getStability() ?></strong> condition.
+        <?php endif; ?>
+        
+      </p>
 
       <ul>
         <li><?php echo link_to(image_tag('/images/disk.gif') . ' Download Information', '@download?slug='.$project->getSlug()) ?></li>

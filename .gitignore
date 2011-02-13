@@ -4,3 +4,4 @@ web/api/*
 pear/*
 data/documentation/*
 data/source/*
+web/frontend_dev.php

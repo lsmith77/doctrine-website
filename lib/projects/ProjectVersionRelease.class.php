@@ -45,4 +45,9 @@ class ProjectVersionRelease
   {
     return $this->data['pear_install_command'];
   }
+
+  public function __toString()
+  {
+    return $this->getSlug();
+  }
 }

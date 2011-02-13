@@ -225,7 +225,7 @@ mongodb_odm:
   namespace: Doctrine\ODM\MongoDB
   versions:
     '1.0':
-      stability: alpha
+      stability: beta
       git_checkout_command: 'git clone git://github.com/doctrine/mongodb-odm.git mongodb_odm'
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/mongodb-odm.git mongodb_odm'
       api_source_path: source/mongodb_odm1.0/lib
