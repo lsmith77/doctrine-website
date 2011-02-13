@@ -258,19 +258,22 @@ mongodb_odm:
           title: Reference
           subtitle: 'Reference for using the Doctrine MongoDB Object Document Mapper'
           description: 'Detailed reference documentation for all the Doctrine MongoDB Object Document Mapper features.'
-          toc_path: documentation/odm1.0/MongoDB/reference
-          markup_parser: markdown
-          update_command: 'rm -rf documentation/odm1.0 && git clone git://github.com/doctrine/mongodb-odm-documentation.git documentation/odm1.0'
+          toc_path: documentation/mongodb_odm1.0/reference
+          rest_doc_location: http://www.doctrine-project.org/docs/mongodb_odm/1.0/en
+          markup_parser: rest
+          update_command: 'rm -rf documentation/mongodb_odm1.0 && git clone git://github.com/doctrine/mongodb-odm-documentation.git documentation/mongodb_odm1.0 && sphinx-build documentation/mongodb_odm1.0/en/ documentation/build/mongodb_odm/1.0/en'
           icon: reference_icon.png
         cookbook:
           slug: cookbook
           title: Cookbook
           subtitle: 'Everyday recipes for everyday Doctrine MongoDB ODM users'
           description: 'The cookbook is a collection of simple and advanced recipes for using Doctrine MongoDB ODM. They are both written by core Doctrine developers as well as by Doctrine users in the community.'
-          toc_path: documentation/odm1.0/MongoDB/cookbook
-          markup_parser: markdown
-          update_command: 'rm -rf documentation/odm1.0 && git clone git://github.com/doctrine/mongodb-odm-documentation.git documentation/odm1.0'
+          toc_path: documentation/monogodb_odm1.0/cookbook
+          rest_doc_location: http://www.doctrine-project.org/docs/mongodb_odm/1.0/en#cookbook
+          markup_parser: rest
+          update_command: 'rm -rf documentation/mongodb_odm1.0 && git clone git://github.com/doctrine/mongodb-odm-documentation.git documentation/mongodb_odm1.0'
           icon: cookbook_icon.png
+
 migrations:
   slug: migrations
   title: 'Migrations'
