@@ -60,6 +60,10 @@ orm:
           package_name: Doctrine-1.2.3.tgz
           svn_checkout_command: 'svn co http://svn.doctrine-project.org/tags/1.2.3'
           pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.3.tgz'
+        1.2.4:
+          package_name: Doctrine-1.2.4.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine1.git doctrine-orm<br/>$ cd doctrine-orm<br/>$ git checkout 1.2.4'
+          pear_install_command: 'pear install pear.doctrine-project.org/Doctrine-1.2.4.tgz'
     '2.0':
       version_file: source/orm2.0/lib/Doctrine/ORM/Version.php
       api_source_path: source/orm2.0/lib/Doctrine/ORM
@@ -149,6 +153,10 @@ orm:
           package_name: DoctrineORM-2.0.2-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.2<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.2'
+        2.0.3:
+          package_name: DoctrineORM-2.0.3-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.0.3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.0.3'
 dbal:
   slug: dbal
   title: 'Database Abstraction Layer'
@@ -223,6 +231,10 @@ dbal:
           package_name: DoctrineDBAL-2.0.2-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.2<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.2'
+        2.0.3:
+          package_name: DoctrineDBAL-2.0.3-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.3'
 mongodb_odm:
   slug: mongodb_odm
   title: 'MongoDB Object Document Mapper'
