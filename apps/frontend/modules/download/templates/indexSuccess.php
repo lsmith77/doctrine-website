@@ -28,7 +28,7 @@
         
         <pre class="command-line">
         <code>$ pear channel-discover pear.doctrine-project.org
-$ <?= $command; ?></code></pre>
+$ <?php echo $command; ?></code></pre>
       <?php endif; ?>
 
     <?php if ($releases = $version->getReleases()): ?>
