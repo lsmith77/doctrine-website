@@ -26,8 +26,7 @@
       <?php if ($command = $version->getPearInstallCommand()): ?>
         <h5>Install via PEAR</h5>
         
-        <pre class="command-line">
-        <code>$ pear channel-discover pear.doctrine-project.org
+        <pre class="command-line"><code>$ pear channel-discover pear.doctrine-project.org
 $ <?php echo $command; ?></code></pre>
       <?php endif; ?>
 
