@@ -15,7 +15,6 @@
     <a name="<?php echo $version->getSlug() ?>"></a>
     <h3>Download <?php echo $version->getSlug() ?> (<?php echo $version->getStability() ?>)</h3>
 
-    <?php if ($releases = $version->getReleases()): ?>
       <?php if ($command = $version->getSvnCheckoutCommand()): ?>
         <h5>Checkout from Subversion</h5>
         <pre class="command-line"><code>$ <?php echo $command ?></code></pre>
@@ -24,22 +23,21 @@
         <h5>Checkout from github</h5>
         <pre class="command-line"><code>$ <?php echo $command ?></code></pre>
       <?php endif; ?>
-      
+      <?php if ($command = $version->getPearInstallCommand()): ?>
+        <h5>Install via PEAR</h5>
+        
+        <pre class="command-line">
+        <code>$ pear channel-discover pear.doctrine-project.org
+$ <?= $command; ?></code></pre>
+      <?php endif; ?>
+
+    <?php if ($releases = $version->getReleases()): ?>
       <h5>Packages</h5>
       <ul>
         <?php foreach ($releases as $release): ?>
           <li><?php echo link_to('Download '.$release->getSlug().' Package', $release->getPackageLink()) ?> &nbsp; (<?php echo link_to('more download options', '@download_release?slug='.$project->getSlug().'&version='.$version->getSlug().'&release='.$release->getSlug()) ?>)</li>
         <?php endforeach; ?>
       </ul>
-    <?php else: ?>
-      <?php if ($command = $version->getSvnCheckoutCommand()): ?>
-        <h5>Checkout from Subversion</h5>
-        <pre class="command-line"><code>$ <?php echo $command ?></code></pre>
-      <?php endif; ?>
-      <?php if ($command = $version->getGitCheckoutCommand()): ?>
-        <h5>Checkout from github</h5>
-        <pre class="command-line"><code>$ <?php echo $command ?></code></pre>
-      <?php endif; ?>
     <?php endif; ?>
   <?php endforeach; ?>
 </div>

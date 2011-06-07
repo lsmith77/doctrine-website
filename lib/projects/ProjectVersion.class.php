@@ -38,6 +38,11 @@ class ProjectVersion
   {
     return isset($this->data['git_checkout_command']) ? $this->data['git_checkout_command'] : null;
   }
+  
+  public function getPearInstallCommand()
+  {
+    return isset($this->data['pear_install_command']) ? $this->data['pear_install_command'] : null;
+  }
 
   public function getSlug()
   {
