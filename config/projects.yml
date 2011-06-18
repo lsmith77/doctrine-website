@@ -93,7 +93,7 @@ orm:
           toc_path: documentation/orm2.0/manual
           rest_doc_location: http://www.doctrine-project.org/docs/orm/2.0/en
           markup_parser: rest
-          update_command: 'rm -rf documentation/orm2.0 && git clone git://github.com/doctrine/orm-documentation.git documentation/orm2.0 && sphinx-build documentation/orm2.0/en/ documentation/build/orm/2.0/en'
+          update_command: 'rm -rf documentation/orm2.0 && git clone -b2.0.x git://github.com/doctrine/orm-documentation.git documentation/orm2.0 && sphinx-build documentation/orm2.0/en/ documentation/build/orm/2.0/en'
           icon: reference_icon.png
         cookbook:
           slug: cookbook
@@ -190,7 +190,7 @@ orm:
           toc_path: documentation/orm2.0/manual
           rest_doc_location: http://www.doctrine-project.org/docs/orm/2.0/en
           markup_parser: rest
-          update_command: 'rm -rf documentation/orm2.0 && git clone git://github.com/doctrine/orm-documentation.git documentation/orm2.0 && sphinx-build documentation/orm2.0/en/ documentation/build/orm/2.0/en'
+          update_command: 'rm -rf documentation/orm2.1 && git clone git://github.com/doctrine/orm-documentation.git documentation/orm2.1 && sphinx-build documentation/orm2.1/en/ documentation/build/orm/2.1/en'
           icon: reference_icon.png
         cookbook:
           slug: cookbook
