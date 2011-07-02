@@ -215,6 +215,10 @@ orm:
           package_name: DoctrineORM-2.1.0RC2-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC2<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC2-beta'
+        2.1.0RC3:
+          package_name: DoctrineORM-2.1.0RC3-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0RC3<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0RC3-beta'
 dbal:
   slug: dbal
   title: 'Database Abstraction Layer'
@@ -242,7 +246,7 @@ dbal:
           description: 'Detailed API documentation for the Doctrine 2.0 DBAL.'
           route: '@project_api_documentation?slug=dbal&version=2.0'
           icon: api_icon.png
-          update_command: 'rm -rf source/dbal2.0 && git clone git://github.com/doctrine/dbal.git source/dbal2.0 && rm -rf ../web/api/dbal/2.0 && cd .. && php apidocs.php api-dbal-2.0.ini'
+          update_command: 'rm -rf source/dbal2.0 && git clone -b2.0.x git://github.com/doctrine/dbal.git source/dbal2.0 && rm -rf ../web/api/dbal/2.0 && cd .. && php apidocs.php api-dbal-2.0.ini'
         reference:
           slug: reference
           title: Reference
@@ -251,7 +255,7 @@ dbal:
           toc_path: documentation/dbal2.0/reference
           rest_doc_location: http://www.doctrine-project.org/docs/dbal/2.0/en
           markup_parser: rest
-          update_command: 'rm -rf documentation/dbal2.0 && git clone git://github.com/doctrine/dbal-documentation.git documentation/dbal2.0 && sphinx-build documentation/dbal2.0/en/ documentation/build/dbal/2.0/en'
+          update_command: 'rm -rf documentation/dbal2.0 && git clone -b2.0.x git://github.com/doctrine/dbal-documentation.git documentation/dbal2.0 && sphinx-build documentation/dbal2.0/en/ documentation/build/dbal/2.0/en'
           icon: reference_icon.png
       releases:
         2.0.0BETA2:
@@ -306,6 +310,49 @@ dbal:
           package_name: DoctrineDBAL-2.0.6-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.6<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.6'
+    '2.1':
+      version_file: source/dbal2.1/lib/Doctrine/DBAL/Version.php
+      api_source_path: source/dbal2.1/lib/Doctrine/DBAL
+      source_path: source/dbal2.1
+      update_source_command: 'rm -rf source/dbal2.1 && git clone git://github.com/doctrine/dbal.git source/dbal2.1 && cd source/dbal2.1 && git submodule init && git submodule update'
+      stability: beta
+      git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal'
+      svn_checkout_command: 'svn co http://svn.github.com/doctrine/dbal.git doctrine2-dbal'
+      pear_install_command: 'pear install doctrine/DoctrineDBAL'
+      issues_link: 'http://www.doctrine-project.org/jira/browse/DBAL'
+      browse_source_link: 'http://github.com/doctrine/dbal'
+      documentation_items:
+        api:
+          slug: api
+          title: API
+          subtitle: 'Doctrine 2.1 DBAL API Documentation'
+          description: 'Detailed API documentation for the Doctrine 2.1 DBAL.'
+          route: '@project_api_documentation?slug=dbal&version=2.1'
+          icon: api_icon.png
+          update_command: 'rm -rf source/dbal2.1 && git clone git://github.com/doctrine/dbal.git source/dbal2.1 && rm -rf ../web/api/dbal/2.1 && cd .. && php apidocs.php api-dbal-2.1.ini'
+        reference:
+          slug: reference
+          title: Reference
+          subtitle: 'Reference for using the Doctrine Database Abstraction Layer'
+          description: 'Learn how to use the Doctrine Database Abstraction Layer and take advantage of all simple and advanced features.'
+          toc_path: documentation/dbal2.1/reference
+          rest_doc_location: http://www.doctrine-project.org/docs/dbal/2.1/en
+          markup_parser: rest
+          update_command: 'rm -rf documentation/dbal2.1 && git clone git://github.com/doctrine/dbal-documentation.git documentation/dbal2.1 && sphinx-build documentation/dbal2.1/en/ documentation/build/dbal/2.1/en'
+          icon: reference_icon.png
+      releases:
+        2.1.0BETA1:
+          package_name: DoctrineDBAL-2.1.0BETA1.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-BETA1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0BETA1'
+        2.1.0RC1:
+          package_name: DoctrineDBAL-2.1.0RC1.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-RC1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0RC1'
+        2.1.0RC2:
+          package_name: DoctrineDBAL-2.1.0RC2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-RC2<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0RC2'
 mongodb_odm:
   slug: mongodb_odm
   title: 'MongoDB Object Document Mapper'
@@ -511,3 +558,46 @@ common:
           package_name: DoctrineCommon-2.0.2.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.2'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.2'
+    '2.1':
+      version_file: source/common2.1/lib/Doctrine/Common/Version.php
+      api_source_path: source/common2.1/lib/Doctrine/Common
+      source_path: source/common2.1
+      update_source_command: 'rm -rf source/common2.1 && git clone git://github.com/doctrine/common.git source/common2.1 && cd source/common2.1 && git submodule init && git submodule update'
+      stability: beta
+      git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common'
+      svn_checkout_command: 'svn co http://svn.github.com/doctrine/common.git doctrine2-common'
+      pear_install_command: 'pear install doctrine/DoctrineCommon'
+      issues_link: 'http://www.doctrine-project.org/jira/browse/DCOM'
+      browse_source_link: 'http://github.com/doctrine/common'
+      documentation_items:
+        api:
+          slug: api
+          title: API
+          subtitle: 'Doctrine 2.1 Common API Documentation'
+          description: 'Detailed API documentation for the Doctrine 2.1 Common Package.'
+          route: '@project_api_documentation?slug=common&version=2.1'
+          icon: api_icon.png
+          update_command: 'rm -rf source/common2.1 && git clone git://github.com/doctrine/common.git source/common2.1 && rm -rf ../web/api/common/2.1 && cd .. && php apidocs.php api-common-2.1.ini'
+        reference:
+          slug: reference
+          title: Reference
+          subtitle: 'Reference for the common Doctrine PHP extensions.'
+          description: 'Detailed reference documentation for all the common Doctrine PHP extensions.'
+          toc_path: documentation/common2.1/reference
+          markup_parser: markdown
+          update_command: 'rm -rf documentation/common2.1 && git clone git://github.com/doctrine/common-documentation.git documentation/common2.1'
+          icon: reference_icon.png
+      releases:
+        2.1.0BETA1:
+          package_name: DoctrineCommon-2.1.0BETA1.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0-BETA1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0BETA1'
+        2.1.0RC1:
+          package_name: DoctrineCommon-2.1.0RC1.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0-RC1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0RC1'
+        2.1.0RC2:
+          package_name: DoctrineCommon-2.1.0RC2.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0-RC2'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0RC2'
+          
