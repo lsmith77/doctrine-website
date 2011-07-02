@@ -547,15 +547,15 @@ common:
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0-RC2'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0RC2'
         2.0.0:
-          package_name: DoctrineCommon-2.0.0.tgz
+          package_name: DoctrineCommon-2.0.0-full.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.0'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.0'
         2.0.1:
-          package_name: DoctrineCommon-2.0.1.tgz
+          package_name: DoctrineCommon-2.0.1-full.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.1'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.1'
         2.0.2:
-          package_name: DoctrineCommon-2.0.2.tgz
+          package_name: DoctrineCommon-2.0.2-full.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.0.2'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.0.2'
     '2.1':
