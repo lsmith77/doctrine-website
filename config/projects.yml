@@ -584,6 +584,7 @@ common:
           subtitle: 'Reference for the common Doctrine PHP extensions.'
           description: 'Detailed reference documentation for all the common Doctrine PHP extensions.'
           toc_path: documentation/common2.1/reference
+          rest_doc_location: http://www.doctrine-project.org/docs/common/2.1/en
           markup_parser: rest
           update_command: 'rm -rf documentation/common2.1 && git clone git://github.com/doctrine/common-documentation.git documentation/common/2.1 && sphinx-build documentation/common/2.1/en/ documentation/build/common/2.1/en'
           icon: reference_icon.png
