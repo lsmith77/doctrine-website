@@ -346,19 +346,19 @@ dbal:
           icon: reference_icon.png
       releases:
         2.1.0BETA1:
-          package_name: DoctrineDBAL-2.1.0BETA1.tgz
+          package_name: DoctrineDBAL-2.1.0BETA1-full.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-BETA1<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0BETA1'
         2.1.0RC1:
-          package_name: DoctrineDBAL-2.1.0RC1.tgz
+          package_name: DoctrineDBAL-2.1.0RC1-full.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-RC1<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0RC1'
         2.1.0RC2:
-          package_name: DoctrineDBAL-2.1.0RC2.tgz
+          package_name: DoctrineDBAL-2.1.0RC2-full.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0-RC2<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0RC2'
         2.1.0:
-          package_name: DoctrineDBAL-2.1.0.tgz
+          package_name: DoctrineDBAL-2.1.0-full.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0'
 mongodb_odm:
