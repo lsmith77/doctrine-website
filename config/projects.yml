@@ -461,6 +461,23 @@ couchdb_odm:
           markup_parser: rest
           update_command: 'rm -rf documentation/couchdb_odm1.0 && git clone git://github.com/doctrine/couchdb-documentation.git documentation/couchdb_odm1.0 && sphinx-build documentation/couchdb_odm1.0/en/ documentation/build/couchdb_odm/1.0/en'
           icon: reference_icon.png
+phpcr_odm:
+  slug: phpcr_odm
+  title: 'PHPCR Object Document Mapper'
+  short_title: PHPCRODM
+  description: 'Doctrine PHPCR Object Document Mapper is built for PHP 5.3.2+ and provides transparent persistence for PHP objects.'
+  latest_version: '1.0'
+  is_primary: false
+  namespace: Doctrine\ODM\PHPCR
+  versions:
+    '1.0':
+      stability: pre-alpha
+      git_checkout_command: 'git clone git://github.com/doctrine/phpcr-odm.git phpcr_odm'
+      svn_checkout_command: 'svn co http://svn.github.com/doctrine/phpcr-odm.git phpcr_odm'
+      issues_link: 'http://www.doctrine-project.org/jira/browse/PHPCR'
+      browse_source_link: 'http://github.com/doctrine/phpcr-odm'
+      releases: []
+      documentation_items: []
 
 migrations:
   slug: migrations
