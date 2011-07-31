@@ -471,7 +471,7 @@ phpcr_odm:
   namespace: Doctrine\ODM\PHPCR
   versions:
     '1.0':
-      stability: pre-alpha
+      stability: alpha
       git_checkout_command: 'git clone git://github.com/doctrine/phpcr-odm.git phpcr_odm'
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/phpcr-odm.git phpcr_odm'
       issues_link: 'http://www.doctrine-project.org/jira/browse/PHPCR'
