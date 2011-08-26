@@ -3,7 +3,7 @@ orm:
   title: 'Object Relational Mapper'
   short_title: ORM
   description: 'Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL). One of its key features is the option to write database queries in a proprietary object oriented SQL dialect called Doctrine Query Language (DQL), inspired by Hibernates HQL. This provides developers with a powerful alternative to SQL that maintains flexibility without requiring unnecessary code duplication.'
-  latest_version: '2.0'
+  latest_version: '2.1'
   is_primary: true
   versions:
     '1.2':
@@ -227,12 +227,16 @@ orm:
           package_name: DoctrineORM-2.1.0-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.0<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.0'
+        2.1.1:
+          package_name: DoctrineORM-2.1.1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm<br/>$ cd doctrine2-orm<br/>$ git checkout 2.1.1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineORM-2.1.1'
 dbal:
   slug: dbal
   title: 'Database Abstraction Layer'
   short_title: DBAL
   description: 'Powerful database abstraction layer with many features for database schema introspection, schema management and PDO abstraction.'
-  latest_version: '2.0'
+  latest_version: '2.1'
   is_primary: true
   versions:
     '2.0':
@@ -369,6 +373,10 @@ dbal:
           package_name: DoctrineDBAL-2.1.0-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.0<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.0'
+        2.1.1:
+          package_name: DoctrineDBAL-2.1.1-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.1<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.1'
 mongodb_odm:
   slug: mongodb_odm
   title: 'MongoDB Object Document Mapper'
@@ -526,7 +534,7 @@ common:
   title: 'Common'
   short_title: Common
   description: 'The Doctrine Common project is a library that provides extensions to core PHP functionality.'
-  latest_version: '2.0'
+  latest_version: '2.1'
   is_primary: false
   versions:
     '2.0':
@@ -638,4 +646,8 @@ common:
           package_name: DoctrineCommon-2.1.0-full.tgz
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.0'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.0'
+        2.1.1:
+          package_name: DoctrineCommon-2.1.1-full.tgz
+          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.1.1'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.1.1'
           
