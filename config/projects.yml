@@ -326,6 +326,10 @@ dbal:
           package_name: DoctrineDBAL-2.0.7-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.7<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.7'
+        2.0.8:
+          package_name: DoctrineDBAL-2.0.8-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.0.8<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.0.8'
     '2.1':
       version_file: source/dbal2.1/lib/Doctrine/DBAL/Version.php
       api_source_path: source/dbal2.1/lib/Doctrine/DBAL
@@ -377,6 +381,10 @@ dbal:
           package_name: DoctrineDBAL-2.1.1-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.1<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.1'
+        2.1.2:
+          package_name: DoctrineDBAL-2.1.2-full.tar.gz
+          git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.1.2<br />$ git submodule update --init'
+          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.1.2'
 mongodb_odm:
   slug: mongodb_odm
   title: 'MongoDB Object Document Mapper'
