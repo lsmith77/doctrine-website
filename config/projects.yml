@@ -335,7 +335,7 @@ dbal:
       api_source_path: source/dbal2.1/lib/Doctrine/DBAL
       source_path: source/dbal2.1
       update_source_command: 'rm -rf source/dbal2.1 && git clone git://github.com/doctrine/dbal.git source/dbal2.1 && cd source/dbal2.1 && git submodule init && git submodule update'
-      stability: beta
+      stability: stable
       git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal'
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/dbal.git doctrine2-dbal'
       pear_install_command: 'pear install doctrine/DoctrineDBAL'
