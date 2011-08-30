@@ -44,14 +44,14 @@ class documentationActions extends sfActions
     $this->project = Project::getProject($this->getRequestParameter('slug'));
     $this->forward404Unless($this->project);
 
-    if ( !($version = $this->getRequestParameter('version') == 'current')) {
+    if ( ($version = $this->getRequestParameter('version')) == 'current')  {
         $version = $this->project->getLatestVersion()->getSlug();
     }
 
     $this->version = $this->project->getVersion($version);
     $this->forward404Unless($this->version);
 
-    $this->documentationItems = $this->version->getDocumentationItems($this->getRequestParameter('version'));
+    $this->documentationItems = $this->version->getDocumentationItems($version);
 
     $this->getResponse()->setTitle('Doctrine - '.$this->project->getTitle().' Documentation ('.$this->version->getSlug().')');
   }
@@ -61,7 +61,11 @@ class documentationActions extends sfActions
     $this->project = Project::getProject($this->getRequestParameter('slug'));
     $this->forward404Unless($this->project);
 
-    $this->version = $this->project->getVersion($this->getRequestParameter('version'));
+    if ( ($version = $this->getRequestParameter('version')) == 'current')  {
+        $version = $this->project->getLatestVersion()->getSlug();
+    }
+
+    $this->version = $this->project->getVersion($version);
     $this->forward404Unless($this->version);
 
     $this->documentationItem = $this->version->getDocumentationItem($this->getRequestParameter('item'));
