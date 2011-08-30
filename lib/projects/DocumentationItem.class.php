@@ -96,7 +96,10 @@ class DocumentationItem
     {
       return $this->data['route'];
     }
-    return '@project_documentation_item?slug='.$this->project->getSlug().'&version='.$this->version->getSlug().'&item='.$this->getSlug();
+
+    $version = ($this->version->getSlug() == $this->project->getLatestVersion()->getSlug()) ? 'current' : $this->version->getSlug();
+
+    return '@project_documentation_item?slug='.$this->project->getSlug().'&version='.$version.'&item='.$this->getSlug();
   }
 
   public function getTableOfContentsPath($language, $user)

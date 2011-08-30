@@ -4,7 +4,7 @@
 
   <ul>
     <li><?php echo link_to('Issues', $project->getIssuesLink()) ?></li>
-    <li><?php echo link_to('Documentation', '@project_documentation?slug='.$project->getSlug().'&version='.$project->getLatestVersion()->getSlug()) ?></li>
+    <li><?php echo link_to('Documentation', '@project_documentation?slug='.$project->getSlug().'&version=current') ?></li>
     <li><?php echo link_to('Download', '@download?slug='.$project->getSlug()) ?></li>
   </ul>
 </li>
