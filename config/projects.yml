@@ -184,8 +184,16 @@ orm:
       stability: stable
       issues_link: 'http://www.doctrine-project.org/jira/browse/DDC'
       browse_source_link: 'http://github.com/doctrine/doctrine2/tree/master/lib/Doctrine/ORM'
-      upgrade_file_path: source/orm2.0/UPGRADE_TO_2_0
+      upgrade_file_path: source/orm2.1/UPGRADE_TO_2_1
       documentation_items:
+        api:
+          slug: api
+          title: API
+          subtitle: 'Doctrine 2.1 ORM API Documentation'
+          description: 'Detailed API documentation for the Doctrine 2.1 codebase.'
+          route: '@project_api_documentation?slug=orm&version=2.1'
+          icon: api_icon.png
+          update_command: 'rm -rf source/orm2.1 && git clone git://github.com/doctrine/doctrine2.git source/orm2.1 && rm -rf ../web/api/orm/2.1 && cd .. && php apidocs.php api-orm-2.1.ini'
         reference:
           slug: reference
           title: Reference
