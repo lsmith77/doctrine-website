@@ -768,11 +768,7 @@ common:
           update_command: 'rm -rf documentation/common/2.2 && git clone git://github.com/doctrine/common-documentation.git documentation/common/2.2 && sphinx-build documentation/common/2.2/en/ documentation/build/common/2.2/en'
           icon: reference_icon.png
       releases:
-        2.1.0BETA1:
-          package_name: DoctrineCommon-2.2.0beta1-full.tar.gz
-          git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.2.0-beta1'
-          pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.2.0beta1'
         2.1.0RC3:
-          package_name: DoctrineCommon-2.2.0RC3-full.tar.gz
+          package_name: DoctrineCommon-2.2.0-RC3-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/common.git doctrine2-common<br/>$ cd doctrine2-common<br/>$ git checkout 2.2.0-RC3'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineCommon-2.2.0RC3'
