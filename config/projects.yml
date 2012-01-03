@@ -502,7 +502,7 @@ dbal:
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.2.0-beta1<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.2.0beta1'
         2.2.0BETA2:
-          package_name: DoctrineDBAL-2.2.0-beta2-full.tar.gz
+          package_name: DoctrineDBAL-2.2.0-BETA2-full.tar.gz
           git_checkout_command: 'git clone git://github.com/doctrine/dbal.git doctrine2-dbal<br/>$ cd doctrine2-dbal<br/>$ git checkout 2.2.0-beta2<br />$ git submodule update --init'
           pear_install_command: 'pear install pear.doctrine-project.org/DoctrineDBAL-2.2.0beta2'
 mongodb_odm:
