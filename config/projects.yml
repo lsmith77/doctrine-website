@@ -510,7 +510,7 @@ dbal:
           toc_path: documentation/dbal2.2/reference
           rest_doc_location: http://www.doctrine-project.org/docs/dbal/2.2/en
           markup_parser: rest
-          update_command: 'rm -rf documentation/dbal2.2 && git clone git://github.com/doctrine/dbal-documentation.git documentation/dbal2.2 && sphinx-build documentation/dbal2.2/en/ documentation/build/dbal/2.2/en'
+          update_command: 'rm -rf documentation/dbal2.2 && git clone git://github.com/doctrine/dbal-documentation.git documentation/dbal2.2 && git submodule update --init && sphinx-build documentation/dbal2.2/en/ documentation/build/dbal/2.2/en'
           icon: reference_icon.png
       releases:
         2.2.0BETA1:
@@ -846,7 +846,7 @@ common:
           toc_path: documentation/common2.2/reference
           rest_doc_location: http://www.doctrine-project.org/docs/common/2.2/en
           markup_parser: rest
-          update_command: 'rm -rf documentation/common/2.2 && git clone git://github.com/doctrine/common-documentation.git documentation/common/2.2 && sphinx-build documentation/common/2.2/en/ documentation/build/common/2.2/en'
+          update_command: 'rm -rf documentation/common/2.2 && git clone git://github.com/doctrine/common-documentation.git documentation/common/2.2 && git submodule update --init && sphinx-build documentation/common/2.2/en/ documentation/build/common/2.2/en'
           icon: reference_icon.png
       releases:
         2.2.0RC3:
