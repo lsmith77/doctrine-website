@@ -287,7 +287,7 @@ orm:
           toc_path: documentation/orm2.2/manual
           rest_doc_location: http://www.doctrine-project.org/docs/orm/2.1/en
           markup_parser: rest
-          update_command: 'rm -rf documentation/orm2.2 && git clone git://github.com/doctrine/orm-documentation.git documentation/orm2.2 && sphinx-build documentation/orm2.2/en/ documentation/build/orm/2.2/en'
+          update_command: 'rm -rf documentation/orm2.2 && git clone git://github.com/doctrine/orm-documentation.git documentation/orm2.2 && git submodule update --init && sphinx-build documentation/orm2.2/en/ documentation/build/orm/2.2/en'
           icon: reference_icon.png
         cookbook:
           slug: cookbook
