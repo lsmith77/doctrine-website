@@ -263,7 +263,7 @@ orm:
       version_file: source/orm2.2/lib/Doctrine/ORM/Version.php
       api_source_path: source/orm2.2/lib/Doctrine/ORM
       source_path: source/orm2.2
-      update_source_command: 'rm -rf source/orm2.2 && git clone git://github.com/doctrine/doctrine2.git source/orm2.2 && cd source/orm2.1 && git submodule init && git submodule update && git checkout master'
+      update_source_command: 'rm -rf source/orm2.2 && git clone git://github.com/doctrine/doctrine2.git source/orm2.2 && cd source/orm2.2 && git submodule init && git submodule update && git checkout master'
       git_checkout_command: 'git clone git://github.com/doctrine/doctrine2.git doctrine2-orm'
       svn_checkout_command: 'svn co http://svn.github.com/doctrine/doctrine2.git doctrine2-orm'
       stability: stable
@@ -285,7 +285,7 @@ orm:
           subtitle: 'Complete reference guide to Doctrine 2'
           description: 'The Doctrine 2 Reference Documentation is the main source of documentation for the project. It is a reference book that can be read from start to finish and provides examples and information about the provided features.'
           toc_path: documentation/orm2.2/manual
-          rest_doc_location: http://www.doctrine-project.org/docs/orm/2.1/en
+          rest_doc_location: http://www.doctrine-project.org/docs/orm/2.2/en
           markup_parser: rest
           update_command: 'rm -rf documentation/orm2.2 && git clone git://github.com/doctrine/orm-documentation.git documentation/orm2.2 && git submodule update --init && sphinx-build documentation/orm2.2/en/ documentation/build/orm/2.2/en'
           icon: reference_icon.png
